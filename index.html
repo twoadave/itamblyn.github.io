@@ -10,13 +10,13 @@
 <script type="text/javascript">
 <!--
 var time = 3000;
-var numofitems = 7;
+var numofitems = 3;
 
 //menu constructor
 function menu(allitems,thisitem,startstate){ 
   callname= "gl"+thisitem;
   divname="subglobal"+thisitem;  
-  this.numberofmenuitems = 7;
+  this.numberofmenuitems = numofitems;
   this.caller = document.getElementById(callname);
   this.thediv = document.getElementById(divname);
   this.thediv.style.visibility = startstate;
@@ -68,63 +68,39 @@ function closesubnav(event){
   <div id="globalNav"> 
     <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr"> 
     <div id="globalLink"> 
-      <a href="http://www.nrc-cnrc.gc.ca" target="nrc.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">National Research Council of Canada</a>
+      <a href="http://www.uottawa.ca" target="away" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ottawa</a>
+      <a href="https://uwaterloo.ca/" target="away" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">University of Waterloo</a>
 	  <a href="https://goo.gl/maps/6WUuZrHTfJL2" target="map" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Ottawa, Ontario, Canada</a>
     </div> 
     <!--end globalLinks--> 
   </div> 
   <!-- end globalNav --> 
   <div id="subglobal1" class="subglobalNav"> 
-    <a href="http://www.uottawa.ca" target="www.uottawa.ca">University Homepage</a> | 
-	<a href="https://science.uottawa.ca/physics/" target="https://science.uottawa.ca/physics/">Department of Physics</a> 
+    <a href="http://www.uottawa.ca" target="away">University Homepage</a> | 
+	<a href="https://science.uottawa.ca/physics/" target="away">Department of Physics</a> 
+  </div> 
 
-  </div> 
   <div id="subglobal2" class="subglobalNav"> 
-    <a href="http://www.science.uoit.ca/people/physics-faculty-and-staff.php" target="physics.uoit.ca">Physics Homepage</a> | 
-	<a href=http://www.science.uoit.ca/people/administration.php" target="contact department">Department contact information</a>
+    <a href="https://uwaterloo.ca/" target="away">University Homepage</a> | 
+	<a href="https://uwaterloo.ca/electrical-computer-engineering/" target="away">Department of Electrical and Computer Engineering</a> 
   </div> 
+
   <div id="subglobal3" class="subglobalNav"> 
     <a href="https://goo.gl/maps/6WUuZrHTfJL2">Map it</a> | 
 	<a href="http://www.ottawa.ca/" target="HRM homepage">City of Ottawa</a> |
     <a href="http://www.cbc.ca/ottawa/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
 	<a href="https://weather.gc.ca/city/pages/on-118_metric_e.html" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
 	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
-
   </div> 
-  <div id="subglobal4" class="subglobalNav"> 
-    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
-    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
-    link</a> | <a href="#">subglobal4 link</a> 
-  </div> 
-  <div id="subglobal5" class="subglobalNav"> 
-    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
-    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
-    link</a> | <a href="#">subglobal5 link</a> 
-  </div> 
-  <div id="subglobal6" class="subglobalNav"> 
-    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
-    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
-    link</a> | <a href="#">subglobal6 link</a> 
-  </div> 
-  <div id="subglobal7" class="subglobalNav"> 
-    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
-    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
-    link</a> | <a href="#">subglobal7 link</a> 
-  </div> 
-  <div id="subglobal8" class="subglobalNav"> 
-    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
-    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
-    link</a> | <a href="#">subglobal8 link</a> 
-  </div> 
-
 </div> 
+
 <div id="pagecell1"> 
 <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr">
 
 <div id="breadCrumb">
 </div>
 <div id="pageName"> 
-    <h2><font color=white>Home</font></h2> 
+    <h2>Home</h2> 
 </div> 
 <div id="pageNav"> 
     <div id="sectionLinks"> 
@@ -167,7 +143,7 @@ function closesubnav(event){
                   National Research Council of Canada<br>
                   Ottawa, Ontario<br>
                   CANADA, K1N 5A2</p>
-                  <p>e-mail : <a href="mailto:isaac.tamblyn@nrc.ca">isaac.tamblyn@nrc.ca</a> (<a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2709BDE74034DB6A4842E1D03259FEF2EA5C4C99">public key<a>)<br>
+                  <p>e-mail : <a href="mailto:isaac.tamblyn@uottawa.ca">isaac.tamblyn@uottawa.ca</a> (<a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2709BDE74034DB6A4842E1D03259FEF2EA5C4C99">public key<a>)<br>
                   <p>Office : <a href="https://www.google.com/maps/place/100+Sussex+Dr,+Ottawa,+ON+K1N+5A2,+Canada/@45.4380243,-75.6947666,14.81z/data=!4m5!3m4!1s0x4cce04e6591af71d:0xe64b66994b1a7802!8m2!3d45.4385561!4d-75.6975785">100 Sussex, Room 2025</a></p>
 				  <p>tel : +1.613.796.5148</p>
 				  <p>Adjunct Professor, <a href="http://science.uottawa.ca/physics/">University of Ottawa (Physics)</a>, <a href="https://uwaterloo.ca/electrical-computer-engineering/">University of Waterloo (Electrical & Computer Engineering)</a>, and <a href="https://science.ontariotechu.ca/physics/index.php">Ontario Tech University (Physics)</a><p>
@@ -219,8 +195,7 @@ function closesubnav(event){
       <a href="http://www.uoit.ca" target="uoit.ca"><img src="images/uoit.jpg"             alt="UOIT"    border="0" height="50"></a> <img src="images/space.GIF" width="25" height="31"> 
       <a href="http://www.nserc.gc.ca" target="nserc" border="0"><img src="images/nserc.gif" width="75" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31">
       <a href="http://computecanada.ca" target="computecanada"><img src="images/compute_canada.png" height="31"> <a href="http://www.computecanada.org"></a><img src="images/space.GIF" width="25" height="31">
-      <a href="https://vectorinstitute.ai" target="Vector" border="0"><img src="images/vector_logo.png" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
-
+      <a href="http://www.soscip.org" target="soscip" border="0"><img src="images/soscip_logo.png" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
 </div>
 </div>
 <br> 
