@@ -4,7 +4,7 @@
 <!-- DW6 -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>Isaac Tamblyn</title>
+<title>CLEAN - Teaching</title>
 <link rel="stylesheet" href="emx_nav_left.css" type="text/css">
 <script type="text/javascript">
 <!--
@@ -144,6 +144,7 @@ function closesubnav(event){
       <a href="publications.html">Publications</a>
       <a href="prospective_students.html">Prospective Students</a>
       <a href="classroom_tech.html">Classroom Tech</a>
+      <a href="policy.html">Policy</a>
     </div> 
 </div> 
 <!-- bottom_head -->
@@ -156,11 +157,11 @@ function closesubnav(event){
 
     <ol>
       <li>Get comfortable using python
-      <li>Use Jupyter notebooks to write code and make plots with https://matplotlib.org. Google has a free cloud service http://colab.research.google.com where you can experiment.
+      <li>Use Jupyter notebooks to write code and make plots with <a href="https://matplotlib.org" target="away">https://matplotlib.org</a>. Google has a free cloud service http://colab.research.google.com where you can experiment.
       <li>Work through the initial tutorials in pytorch. Pytorch is a programming framework which is used to construct and optimize deep neural networks.  They are quite good. Start <a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html">here</a>. Tensorflow is another excellent option. I just have found pytorch a bit easier to use and understand, but that's just me. Given how much online documentation and tutorials there are written in tensorflow, if you're going do a lot of this kind of work, you'll have to become comfortable at least reading tensorflow code as well. 
 
     <li>Beyond the prebaked examples, I would also highly encourage new learners to generate a labelled dataset of you own (which could just be the value of a function), import it to pytorch, and train the model to predict the value. Once you have gotten this to work, try to see how nets handle extrapolation, interpolation, and the addition of noise in the training data. See how things behave as you increase the magnitude of the noise. You can also explore the difference between depth and width. For a fixed number of weights (i.e. parameters), are you better of using a shallow, wide net or a deep net with less neurons per layer. You should try different functions to get a fell for how things behave. For example, you could try sin(x), x^2, e^x, etc.
-    <li>You do some similar experiments with pictures by generating pictures of two circles at placed randomly at different distances. Can you figure out how to train a convolutional net to predict the distance between two particles? This was actually on of the test cases we did in a publication, so have a look here if you get stuck on this part: https://arxiv.org/abs/1706.09496
+    <li>You do some similar experiments with pictures by generating pictures of two circles at placed randomly at different distances. Can you figure out how to train a convolutional net to predict the distance between two particles? This was actually on of the test cases we did in a publication, so have a look here if you get stuck on this part: <a href="https://arxiv.org/abs/1706.09496">https://arxiv.org/abs/1706.09496</a>
     <li> Try different types of topologies and work with your datasets. Try an RNN or transformer to predict the next value of a function. Try a GAN to make similar images to the circles. 
     </div>
 

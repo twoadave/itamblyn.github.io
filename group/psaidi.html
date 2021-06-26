@@ -1,1488 +1,211 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<!-- DW6 -->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Menlo; color: #24292e; -webkit-text-stroke: #24292e}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 20.0px; font: 12.0px Menlo; color: #24292e; -webkit-text-stroke: #24292e; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Menlo; color: #24292e; -webkit-text-stroke: #24292e; min-height: 14.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Menlo}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #24292e; -webkit-text-stroke: 0px #24292e}
-    table.t1 {background-color: #ffffff; border-collapse: collapse}
-    td.td1 {width: 467.9px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td2 {width: 467.9px; min-width: 50.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td3 {width: 1660.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>CLEAN - Peyman Saidi</title>
+<link rel="stylesheet" href="../emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91911-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
 </head>
-<body>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="top" class="td1">
-        <p class="p1"><span class="s1">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">"http://www.w3.org/TR/html4/loose.dtd"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;!-- DW6 --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;title&gt;Peyman Saidi&lt;/title&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;link rel="stylesheet" href="../emx_nav_left.css" type="text/css"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;script type="text/javascript"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;!--</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">var time = 3000;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">var numofitems = 7;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">//menu constructor</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">function menu(allitems,thisitem,startstate){<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>callname= "gl"+thisitem;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>divname="subglobal"+thisitem; <span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>this.numberofmenuitems = 7;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>this.caller = document.getElementById(callname);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>this.thediv = document.getElementById(divname);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>this.thediv.style.visibility = startstate;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">//menu methods</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">function ehandler(event,theobj){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for (var i=1; i&lt;= theobj.numberofmenuitems; i++){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>var shutdiv =eval( "menuitem"+i+".thediv");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>shutdiv.style.visibility="hidden";</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>theobj.thediv.style.visibility="visible";</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">function closesubnav(event){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if ((event.clientY &lt;48)||(event.clientY &gt; 107)){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>for (var i=1; i&lt;= numofitems; i++){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var shutdiv =eval('menuitem'+i+'.thediv');</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>shutdiv.style.visibility='hidden';</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">// --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;script type="text/javascript"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>var _gaq = _gaq || [];</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>_gaq.push(['_setAccount', 'UA-91911-12']);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>_gaq.push(['_trackPageview']);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>(function() {</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})();</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;body onmousemove="closesubnav(event);"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;div class="skipLinks"&gt;skip to: &lt;a href="#content"&gt;page content&lt;/a&gt; | &lt;a href="pageNav"&gt;links on this page&lt;/a&gt; | &lt;a href="#globalNav"&gt;site navigation&lt;/a&gt; | &lt;a href="#siteInfo"&gt;footer (site information)&lt;/a&gt; &lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;div id="masthead"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1 id="siteName"&gt;&lt;big&gt;&lt;b&gt;C&lt;/b&gt;&lt;/big&gt;omputational &lt;big&gt;&lt;b&gt;L&lt;/b&gt;&lt;/big&gt;aboratory for &lt;big&gt;&lt;b&gt;E&lt;/b&gt;&lt;/big&gt;nergy &lt;big&gt;&lt;b&gt;A&lt;/b&gt;&lt;/big&gt;nd &lt;big&gt;&lt;b&gt;N&lt;/b&gt;&lt;/big&gt;anoscience&lt;/h1&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="globalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl"&gt; &lt;img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="globalLink"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);"&gt;University of Ontario Institute of Technology&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="http://www.physics.dal.ca" target="physics.dal.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);"&gt;Faculty of Science&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="http://maps.google.com/maps?q=Halifax,+Nova+Scotia,+Canada&amp;spn=0.170079,0.282452&amp;hl=en" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);"&gt;Oshawa, Ontario, Canada&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!--end globalLinks--&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- end globalNav --&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal1" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="http://www.uoit.ca" target="www.uoit.ca"&gt;University Homepage&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://science.uoit.ca" target="science.uoit.ca"&gt;Faculty of Science&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://gradstudies.uoit.ca/" target="gradstudies.uoit.ca/"&gt;Faculty of Graduate Studies&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://www.uoit.ca/registrar­" target="registrar.uoit.ca"&gt;Registrar's Office&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal2" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="http://www.physics.dal.ca" target="physics.dal.ca"&gt;Physics Homepage&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://www.physics.dal.ca/physics_3471.html" target="grad studies in physics"&gt;Graduate Studies in Physics&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://www.physics.dal.ca/physics_3498.html" target="contact department"&gt;Department contact information&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal3" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&amp;hl=en&amp;sll=37.857901,-122.252357&amp;sspn=0.011571,0.016351&amp;oq=2000+sim&amp;t=h&amp;hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&amp;z=16"&gt;Map it&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://www.oshawa.ca/" target="HRM homepage"&gt;City of Oshawa&lt;/a&gt; |</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/"&gt;Regional News&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&amp;unit=m" target="weatheroffice.ec.gc.ca"&gt;Local Weather&lt;/a&gt; |<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="http://www.gc.ca/" target="gc.ca"&gt;Government of Canada&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal4" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#"&gt;subglobal4 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal4 link&lt;/a&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal5" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#"&gt;subglobal5 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal5 link&lt;/a&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal6" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#"&gt;subglobal6 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal6 link&lt;/a&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal7" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#"&gt;subglobal7 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal7 link&lt;/a&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="subglobal8" class="subglobalNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#"&gt;subglobal8 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8 link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>link&lt;/a&gt; | &lt;a href="#"&gt;subglobal8 link&lt;/a&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;!-- end masthead --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;div id="pagecell1"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;img alt="" src="../tl_curve_white.gif" height="6" width="6" id="tl"&gt; &lt;img alt="" src="../tr_curve_white.gif" height="6" width="6" id="tr"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="breadCrumb"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="pageName"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Group Members&lt;/h2&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="pageNav"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="sectionLinks"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../index.html"&gt;Home&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../research.html"&gt;Research&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="index.html"&gt;Group Members&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../collaborators.html"&gt;Collaborators&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../codes.html"&gt;Codes and Computing&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../teaching.html"&gt;Teaching&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../funding.html"&gt;Funding&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../publications.html"&gt;Publications&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../prospective_students.html"&gt;Prospective Students&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="../classroom_tech.html"&gt;Classroom Tech&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="content"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="story"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;table width="*"&gt; <span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;tr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;td&gt;&lt;img src="images/psaidi/psaidi.jpg" height=250px&gt;&lt;/td&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/tr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;tr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;td&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt; My name is Peyman Saidi and I am working with Prof. I. Tamblyn on applying machine learning algorithms to materials engineering problems. I am a research associate in the nuclear materials research group of Prof. Mark Daymond at Queen’s University.</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/td&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/tr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/table&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">   </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;hr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;a name="research"&gt;&lt;h3&gt;Research&lt;/h3&gt;&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2">&lt;p&gt; </span>My research interests are in elucidating the fundamental mechanisms of microstructural evolution for systems in materials science, in order to better predict the behaviour of engineering materials, through the development and application of multi-scale numerical, computational and phenomenological models. The long term objective of my research is to bridge the gap between the mesoscale description of microstructural elements employed in materials science and the information gathered from simulations.</p>
-        <p class="p4">In this group we are collaborating to develop deep learning methods which can rapidly approximate the properties of materials based on modelling training data, and leverage Machine Learning tools to perform physics-based modelling of materials.<span class="Apple-converted-space"> </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;div id="siteInfo"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="http://www.uoit.ca" target="uoit.ca"&gt;&lt;img src="../images/uoit.jpg" alt="UOIT" border="0"&gt;&lt;/a&gt; &lt;img src="../images/space.GIF" width="75" height="31"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- &lt;a href="http://www.nserc.gc.ca" target="nserc" border="0"&gt;&lt;img src="images/nserc.gif" width="75" height="31" border="0"&gt;&lt;/a&gt; &lt;img src="../images/space.GIF" width="75" height="31"&gt; --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="http://computecanada.ca" target="computecanada"&gt;&lt;img src="../images/compute_canada.png" height="31"&gt; &lt;a href="http://www.computecanada.org"&gt;&lt;/a&gt;&lt;img src="../images/space.GIF" width="75" height="31"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="http://www.soscip.org" target="soscip" border="0"&gt;&lt;img src="../images/soscip_logo.png" height="31" border="0"&gt;&lt;/a&gt; &lt;img src="../images/space.GIF" width="75" height="31"&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/di&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;br&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;script type="text/javascript"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!--</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem1 = new menu(7,1,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem2 = new menu(7,2,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem3 = new menu(7,3,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem4 = new menu(7,4,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem5 = new menu(7,5,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem6 = new menu(7,6,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var menuitem7 = new menu(7,7,"hidden");</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;<span class="Apple-converted-space"> </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-      </td>
-    </tr>
-  </tbody>
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead"> 
+  <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1> 
+  <div id="globalNav"> 
+    <img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr"> 
+    <div id="globalLink"> 
+      <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ontario Institute of Technology</a>
+	  <a href="http://www.physics.dal.ca" target="physics.dal.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Faculty of Science</a>
+	  <a href="http://maps.google.com/maps?q=Halifax,+Nova+Scotia,+Canada&spn=0.170079,0.282452&hl=en" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Oshawa, Ontario, Canada</a>
+    </div> 
+    <!--end globalLinks--> 
+  </div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"> 
+    <a href="http://www.uoit.ca" target="www.uoit.ca">University Homepage</a> | 
+	<a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
+	<a href="http://gradstudies.uoit.ca/" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
+	<a href="http://www.uoit.ca/registrar­" target="registrar.uoit.ca">Registrar's Office</a> | 
+
+  </div> 
+  <div id="subglobal2" class="subglobalNav"> 
+    <a href="http://www.physics.dal.ca" target="physics.dal.ca">Physics Homepage</a> | 
+	<a href="http://www.physics.dal.ca/physics_3471.html" target="grad studies in physics">Graduate Studies in Physics</a> | 
+	<a href="http://www.physics.dal.ca/physics_3498.html" target="contact department">Department contact information</a>
+  </div> 
+  <div id="subglobal3" class="subglobalNav"> 
+    <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16">Map it</a> | 
+	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
+    <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
+	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
+
+  </div> 
+  <div id="subglobal4" class="subglobalNav"> 
+    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> 
+  </div> 
+  <div id="subglobal5" class="subglobalNav"> 
+    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> 
+  </div> 
+  <div id="subglobal6" class="subglobalNav"> 
+    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> 
+  </div> 
+  <div id="subglobal7" class="subglobalNav"> 
+    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> 
+  </div> 
+  <div id="subglobal8" class="subglobalNav"> 
+    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> 
+  </div> 
+
+</div> 
+<!-- end masthead -->
+<div id="pagecell1"> 
+  <img alt="" src="../tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="../tr_curve_white.gif" height="6" width="6" id="tr">
+  <div id="breadCrumb">
+  </div>
+  <div id="pageName"> 
+    <h2>Peyman Saidi</h2> 
+  </div> 
+  <div id="pageNav"> 
+    <div id="sectionLinks"> 
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="index.html">Group Members</a>
+      <a href="../collaborators.html">Collaborators</a>
+      <a href="../codes.html">Codes and Computing</a>
+      <a href="../datasets/index.html">Datasets</a>
+      <a href="../teaching.html">Teaching</a>
+      <a href="../funding.html">Funding</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../prospective_students.html">Prospective Students</a>
+      <a href="../classroom_tech.html">Classroom Tech</a>
+      <a href="../policy.html">Policy</a>
+
+      
+      
+    </div> 
+
+  </div> 
+  <div id="content"> 
+    <div class="story">
+
+<table width="*">
+  <tr>
+    <td><img src="images/psaidi/psaidi.jpg" height=250px></td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p> My name is Peyman Saidi and I am working with Prof. I. Tamblyn on applying machine learning algorithms to materials engineering problems. I am a research associate in the nuclear materials research group of Prof. Mark Daymond at Queen's University.
+      <br>
+      <br>
+      My research interests are in elucidating the fundamental mechanisms of microstructural evolution for systems in materials science, in order to better predict the behaviour of engineering materials, through the development and application of multi-scale numerical, computational and phenomenological models. The long term objective of my research is to bridge the gap between the mesoscale description of microstructural elements employed in materials science and the information gathered from simulations.
+      <br>
+      <br>
+      In this group we are collaborating to develop deep learning methods which can rapidly approximate the properties of materials based on modelling training data, and leverage Machine Learning tools to perform physics-based modelling of materials.
+    </td>
+  </tr>
+  <tr>
+    <td>
+       email: <a href="mailto:peyman.saidi@queensu.ca">peyman.saidi@queensu.ca</a><br>
+       github: <a href="https://github.com/psaidi" target="away">https://github.com/psaidi</a><br>
+       <br>
+    </td>
+  </tr>
 </table>
+
+</div>
+</div>
+<div id="siteInfo">
+      <img src="../images/space.GIF" width="25" height="31"> <img src="../images/clean_logo.png" alt="UOIT" border="0"  height="50"> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.uottawa.ca" target="uottawa.ca"><img src="../images/uottawa.png"    alt="uOttawa" border="0" height="50"></a> <img src="../images/space.GIF" width="25" height="31">
+
+      <a href="http://www.uoit.ca" target="uoit.ca"><img src="../images/uoit.jpg" alt="UOIT" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.nserc.gc.ca" target="nserc" border="0"><img src="../images/nserc.gif" width="75" height="31" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://computecanada.ca" target="computecanada"><img src="../images/compute_canada.png" height="31"> <a href="http://www.computecanada.org"></a><img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.soscip.org" target="soscip" border="0"><img src="../images/soscip_logo.png" height="31" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+
+</div>
+
+
+
+</div></div>
+</di>
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
 </body>
 </html>
