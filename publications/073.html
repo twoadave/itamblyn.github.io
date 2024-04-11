@@ -1,1 +1,180 @@
-A fundamental challenge in machine learning is to take an observation and make a prediction about future behaviour. In this work, we consider a model system which is evolving according to a hidden (to the machine learning algorithm) set of rules. Can we observe this system and predict what it will do next? Using the approach of maximum likelihood, we train a transformer (a power type of neural network architexture) to determine the various rates of the processes which have occurred during the observation window. The transformer is accurate enough in its learning that we can relibably predict the behaviour of the system over a wide range of conditions - well beyond those seen during the trainign process.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>CLEAN - Manuscripts</title>
+<link rel="shortcut icon" type="image/jpg" href="../images/tab_logo.png"/>
+<link rel="stylesheet" href="../emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 3;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91911-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<!-- Start nav bar -->
+<div id="masthead">
+  <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1>
+  <div id="globalNav">
+    <img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr">
+    <div id="globalLink">
+      <a href="http://www.uottawa.ca" target="_blank" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ottawa</a>
+      <a href="https://uwaterloo.ca/" target="_blank" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">University of Waterloo</a>
+      <a href="https://www.google.com/maps/place/Parliament+Hill/@45.4230759,-75.6995602,14.5z/data=!4m5!3m4!1s0x0:0x26bb54f60c29f6e!8m2!3d45.4235937!4d-75.700929" target="_blank" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Ottawa, Ontario, Canada</a>
+    </div>
+    <!--end globalLinks-->
+  </div>
+  <!-- end globalNav -->
+  <div id="subglobal1" class="subglobalNav">
+    <a href="http://www.uottawa.ca" target="_blank">University Homepage</a> |
+    <a href="https://science.uottawa.ca/physics/" target="_blank">Department of Physics</a>
+  </div>
+
+  <div id="subglobal2" class="subglobalNav">
+    <a href="https://uwaterloo.ca/" target="_blank">University Homepage</a> |
+    <a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank">Department of Electrical and Computer Engineering</a>
+  </div>
+
+  <div id="subglobal3" class="subglobalNav">
+    <a href="https://www.google.com/maps/place/Parliament+Hill/@45.4230759,-75.6995602,14.5z/data=!4m5!3m4!1s0x0:0x26bb54f60c29f6e!8m2!3d45.4235937!4d-75.700929" target="_blank">Map it</a> |
+    <a href="http://www.ottawa.ca/" target="_blank">City of Ottawa</a> |
+    <a href="http://www.cbc.ca/ottawa/" target="_blank">Regional News</a> |
+    <a href="https://weather.gc.ca/city/pages/on-118_metric_e.html" target="_blank">Local Weather</a> |
+    <a href="http://www.gc.ca/" target="_blank">Government of Canada</a>
+  </div>
+</div>
+<!-- End nav bar -->
+
+<div id="pagecell1">
+  <img alt="" src="../tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="../tr_curve_white.gif" height="6" width="6" id="tr">
+  <div id="breadCrumb">
+  </div>
+  <div id="pageName"> 
+    <h2>Manuscript Summary
+  </div> 
+<!-- Start side bar -->
+<div id="pageNav">
+    <div id="sectionLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../group/index.html">Group Members</a>
+      <a href="../collaborators.html">Collaborators</a>
+      <a href="../codes.html">Codes and Computing</a>
+      <a href="../datasets/index.html">Datasets</a>
+      <a href="../teaching.html">Teaching</a>
+      <a href="../funding.html">Funding</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../blog.html">Blog Posts</a>
+      <a href="../prospective_students.html">Prospective Students</a>
+      <a href="../classroom_tech.html">Classroom Tech</a>
+      <a href="../policy.html">Policy</a>
+    </div>
+</div>
+<!-- End side bar -->
+<!-- bottom_head -->
+
+<div id="content">
+    <div class="story">
+
+<table width="*">  
+  <tr>
+    <!--Insert image here.-->
+  	    <!--<td>
+	       <img src="images/DARWIN.png">
+	    </td>
+ 
+    <td>-->
+
+        A fundamental challenge in machine learning is to take an observation and make a prediction about future behaviour. In this work, we consider a model system which is evolving according to a hidden (to the machine learning algorithm) set of rules. Can we observe this system and predict what it will do next? Using the approach of maximum likelihood, we train a transformer (a power type of neural network architexture) to determine the various rates of the processes which have occurred during the observation window. The transformer is accurate enough in its learning that we can relibably predict the behaviour of the system over a wide range of conditions - well beyond those seen during the trainign process.
+
+
+<p>
+<br>
+<br><a href="https://doi.org/10.1038/s41467-024-45629-w" target="new window">Open Access Link</a>
+<br>
+</p>   
+    </td>
+  </tr> 
+</table>
+	
+</div>
+</div>
+
+<!-- Start logos -->
+<div id="siteInfo">
+      <img src="../images/space.GIF" width="25" height="31"> <img src="../images/clean_logo.png" alt="UOIT" border="0"  height="50"> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.uottawa.ca" target="_blank"><img src="../images/uottawa.png"    alt="uOttawa" border="0" height="50"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://uwaterloo.ca" target="_blank"><img src="../images/uwaterloo.jpg"    alt="uWaterloo" border="0" height="100"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.uoit.ca" target="_blank"><img src="../images/uoit.jpg" alt="UOIT" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://www.nserc.gc.ca" target="_blank" border="0"><img src="../images/nserc.gif" width="75" height="31" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+      <a href="http://computecanada.ca" target="_blank"><img src="../images/compute_canada.png" height="31"> <a href="http://www.computecanada.org"></a><img src="../images/space.GIF" width="25" height="31">
+      <a href="https://vectorinstitute.ai/" target="_blank" border="0"><img src="../images/vector_logo.png" height="31" border="0"></a> <img src="../images/space.GIF" width="25" height="31">
+</div>
+<!-- End logos -->
+
+</div>
+</div>
+</di>
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
+</body>
+</html>
